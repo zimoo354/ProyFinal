@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>main</title>
+	<meta name="viewport" content="width=device-width user-scalable=no">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/funciones.js"></script>
+</head>
+<body>
+<script>
+	$('body').on('load', localizar());
+</script>
+<header>
+	<h1>FINAL</h1>
+</header>
+<nav>
+	<a href="lugares.html" style="text-decoration: none; color:#FFFFFF;">
+	<img src="media/lugares.png"  alt="Lugares Guardados">
+	<h2>Ver ubicaciones</h2></a>
+</nav>
+<div id="mapa"></div>
+<div id="registra-lugar">
+	<div id="name-div">
+		<input type="text" id="nombre-lugar" placeholder="Nombre del lugar">
+	</div>
+	<div id="precio-div">
+		<select id="nivel-precio">
+			<option>Categoría de precio</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+	</div>
+		<select id="nota">
+		<option>Calificacion</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+	</select>
+<!-- 	<div class="estrellas">
+		<label><input type="radio" name="nota" value="1"><img class="star" onclick="cambiaEstrella(1)" id="star1" src="media/star1.png"></label>
+		<label><input type="radio" name="nota" value="2"><img class="star" onclick="cambiaEstrella(2)" id="star2" src="media/star1.png"></label>
+		<label><input type="radio" name="nota" value="3"><img class="star" onclick="cambiaEstrella(3)" id="star3" src="media/star1.png"></label>
+		<label><input type="radio" name="nota" value="4"><img class="star" onclick="cambiaEstrella(4)" id="star4" src="media/star1.png"></label>
+		<label><input type="radio" name="nota" value="5"><img class="star" onclick="cambiaEstrella(5)" id="star5" src="media/star1.png"></label>
+	</div> -->
+	<select id="categoria">
+		<option>Categoria</option>
+		<option value="Restaurante">Restaurante</option>
+		<option value="Bar">Bar</option>
+		<option value="Antro">Antro</option>
+		<option value="Cafetería">Cafetería</option>
+	</select>
+</div>
+<button onclick="guardaLugar()">Guardar</button>
+</body>
+
+
+</html>
